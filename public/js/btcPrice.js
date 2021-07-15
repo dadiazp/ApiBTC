@@ -6,7 +6,7 @@ getPrice();
 setInterval(getPrice, 10000);
 
 function getPrice(){
-    $.get("http://apibtc.test/getBTCPrice", {}, function(data){
+    $.get("https://apibitcoin.herokuapp.com/getBTCPrice", {}, function(data){
 
         addTextColor(data);
             
