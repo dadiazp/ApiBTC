@@ -35,8 +35,14 @@ class CryptoAvgApi{
         $prices['last'] = round($prices['last'], 3);
         $prices['averages']['day'] = round($prices['averages']['day'], 3);
 
-        $latest = $this->cryptoRepository->getLatestInserted() ? $this->cryptoRepository->getLatestInserted()->price : 1;
-        $percentage = (($prices['last'] - $latest)*100/$latest);
+        $latest = $this->cryptoRepository->getLatestInserted() ? $this->cryptoRepository->getLatestInserted()->price : null;
+
+        if(isset($latest)){
+            $percentage = (($prices['last'] - $latest)*100/$latest);
+        }else{
+            $percentage = 0;
+        }
+        
         $prices['percentage'] = round($percentage, 6);
 
         $params = array(
