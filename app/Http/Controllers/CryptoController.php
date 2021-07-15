@@ -9,9 +9,9 @@ class CryptoController extends Controller{
 
     public function getPrice(){
         
-        $crytpoPrice = new CryptoAvgApi('BTC', 'USD');
+        $cryptoPrice = new CryptoAvgApi('BTC', 'USD');
 
-        return $crytpoPrice->getCryptoPrice();
+        return $cryptoPrice->getCryptoPrice();
 
     }
 
