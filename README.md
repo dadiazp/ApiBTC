@@ -6,9 +6,6 @@ Mini proyecto desarrollado con el fin de obtener el precio BTCUSD en intervalos 
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
 ### Pre-requisitos 📋
 
 _Para ejecutar localmente en primer lugar clone este repositorio y obtenga los ultimos cambios._
@@ -32,7 +29,7 @@ php artisan migrate
 
 ## Despliegue 📦
 
-_Para correr el proyecto inicia el servidor de tu preferencia_
+_Para correr el proyecto inicia el servidor de tu preferencia, bien sea Laragon, Wamp, Xamp, Mamp, etc._
 
 ## Construido con 🛠️
 
