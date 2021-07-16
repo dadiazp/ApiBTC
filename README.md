@@ -45,7 +45,7 @@ _Para correr el proyecto inicia el servidor de tu preferencia, bien sea Laragon,
 
 ## Autores ✒️
 
-* **Daniel Díaz** - *Trabajo Inicial* - [dadiazp](https://github.com/dadiazp)
+* **Daniel Díaz** - [dadiazp](https://github.com/dadiazp)
 
 ---
 ⌨️ con ❤️ por [dadiazp](https://github.com/dadiazp) 😊
