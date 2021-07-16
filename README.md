@@ -1,105 +1,54 @@
-# Título del Proyecto
+# ApiBTC
 
-_Acá va un párrafo que describa lo que es el proyecto_
+Mini proyecto desarrollado con el fin de obtener el precio BTCUSD en intervalos de 10 segundos, haciendo uso de una API de terceros dedicada a las criptomonedas
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local._
 
 Mira **Deployment** para conocer como desplegar el proyecto.
 
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Para ejecutar localmente en primer lugar clone este repositorio y obtenga los ultimos cambios._
+
+_No olvides crear tu .env y generar una key._
 
 ```
-Da un ejemplo
+php artisan key:generate
 ```
 
-### Instalación 🔧
+_Crea tu base de datos locaL. Este proyecto en particular usó postgress como Sistema gestor de base de datos, pero perfectamente es funcional
+con cualquier otro sistema relacional_.
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Una vez creada tu base de datos recuerda añadir las credenciales en el .env al igual que cambiar el nombre de la conexión en config/database.php segun tu manejador de base de datos._
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
+_Finalmente, ya solo queda correr las migraciones._
 
 ```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
+php artisan migrate
 ```
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+_Para correr el proyecto inicia el servidor de tu preferencia_
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+* [Laravel 8.12](https://laravel.com/docs/8.x) - El framework web usado
+* [Jquery 3.6.0](https://api.jquery.com/) - Librería JS para la carga de data reactiva
+* [Bitcoin Average API](https://apiv2.bitcoinaverage.com/) - API para extraer información acerca de las criptomonedas
+* [Heroku](https://devcenter.heroku.com/articles/heroku-cli) - Servicio de despliegue
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+## Demo
 
-## Contribuyendo 🖇️
+(https://apibitcoin.herokuapp.com/)
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
+* **Daniel Díaz** - *Trabajo Inicial* - [dadiazp](https://github.com/dadiazp)
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [dadiazp](https://github.com/dadiazp) 😊
